@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: hermit-md
+    runtime: docker
+    repo: 'https://github.com/A-d-i-t-h-y-a-n/hermit-md.git'
+    plan: free
+    autoDeploy: true
