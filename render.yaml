@@ -14,16 +14,12 @@ services:
         sync: false
         generateValue: false
         required: true
-        value: ""
       - key: DATABASE_URL
         sync: true
-        value: ""
       - key: PREFIX
         sync: true
-        value: "."
       - key: SUDO
         sync: true
-        value: "null"
       - key: MODE
         value: "private"
       - key: LOG_MSG
