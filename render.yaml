@@ -10,37 +10,29 @@ services:
     envVars:
       - key: VPS
         value: "true"
-        sync: false
       - key: SESSION_ID
-        required: true
         sync: false
-      - key: AUTH_FILE
+        generateValue: false
         required: true
-        sync: false
-      - key: PREFIX
-        required: true
-        sync: false
-      - key: SUDO
-        required: true
-        sync: false
-      - key: MODE
-        required: true
-        sync: false
-      - key: LOG_MSG
-        required: true
-        sync: false
-      - key: AUTO_STATUS_VIEW
-        required: true
-        sync: false
-      - key: READ_MSG
-        required: true
-        sync: false
-      - key: ALWAYS_ONLINE
-        required: true
-        sync: false
-      - key: START_MSG
-        required: true
-        sync: false
+        value: ""
       - key: DATABASE_URL
-        required: true
-        sync: false
+        sync: true
+        value: ""
+      - key: PREFIX
+        sync: true
+        value: "."
+      - key: SUDO
+        sync: true
+        value: "null"
+      - key: MODE
+        value: "private"
+      - key: LOG_MSG
+        value: "false"
+      - key: AUTO_STATUS_VIEW
+        value: "false"
+      - key: READ_MSG
+        value: "false"
+      - key: ALWAYS_ONLINE
+        value: "false"
+      - key: START_MSG
+        value: "true"
