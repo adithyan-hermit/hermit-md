@@ -9,7 +9,7 @@ services:
     autoDeploy: true
     envVars:
       - key: VPS
-        required: true
+        value: "true"
         sync: false
       - key: SESSION_ID
         required: true
